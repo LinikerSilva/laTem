@@ -1,6 +1,6 @@
 <?php
-$password = $_GET['txtPassword'];
-$passwordConfirmation = $_GET['txtPasswordConfirmation'];
+$password = $_POST['txtPassword'];
+$passwordConfirmation = $_POST['txtPasswordConfirmation'];
 
 if ($password != $passwordConfirmation) {
     header("Location: enterpriseRegistry.php?erro=0");

@@ -56,7 +56,7 @@ echo '<html>
         </p>
     </form>
 </html>';
-if (isset($_GET['erro'])) {
+if (isset($_POST['erro'])) {
     echo '<h3>As senhas são diferentes.</h3>';
 }
 ?>
