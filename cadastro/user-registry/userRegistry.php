@@ -1,7 +1,7 @@
 <html>
-<script src="utils/verificadorDeVendaDeAlma.js" rel="script"></script>
+<script src="utils/verificadorDeVendaDeAlmaDeUsuario.js" rel="script"></script>
 <h1>Registro de Usuário</h1>
-<form action="utils/userPasswordVerifier.php" method="post" name="formulary">
+<form action="utils/userPasswordVerifier.php" method="post" name="userFormulary">
     <p>
         <input type="text" name="txtName" placeholder="Nome">
     </p>
@@ -51,7 +51,7 @@
         <input type="password" name="txtPasswordConfirmation" placeholder="Confirme a Senha">
     </p>
     <p>
-        <input type="checkbox" name="vendaDeAlma"><label>Ao criar uma conta, você concorda com os Termos de Uso e Política de Privacidade do Lá Tem.</label>
+        <input type="checkbox" name="vendaDeAlmaDeUsuario"><label>Ao criar uma conta, você concorda com os Termos de Uso e Política de Privacidade do Lá Tem.</label>
     </p>
     <p>
     <h1>Escolha um Avatar de Usuário</h1>
@@ -68,10 +68,10 @@
     <p>
         <input type="radio" name="choosedAvatar" value=4><img src="../user-registry/user-avatars/jogador.png" name="4">
     </p>
-</form>
     <p>
-        <button onclick="vendeuAlma()">Enviar</button>
+        <button onclick="usuarioVendeuAlma()">Enviar</button>
     </p>
+</form>
 </html>
 
 <?php
