@@ -16,7 +16,6 @@
             header("Location: sistema.php");
           }
     } else {
-        //Coloque aqui para fazer o que for necessário;
         header("Location: index.php?erro=0");
     }
 

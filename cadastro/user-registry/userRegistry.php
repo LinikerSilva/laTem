@@ -54,21 +54,6 @@
         <input type="checkbox" name="vendaDeAlmaDeUsuario"><label>Ao criar uma conta, você concorda com os Termos de Uso e Política de Privacidade do Lá Tem.</label>
     </p>
     <p>
-    <h1>Escolha um Avatar de Usuário</h1>
-    </p>
-    <p>
-        <input type="radio" name="choosedAvatar" value=1><img src="/../laTem/logi" name="1">
-    </p>
-    <p>
-        <input type="radio" name="choosedAvatar" value= 2><img src="../user-registry/user-avatars/homem.png" name="2">
-    </p>
-    <p>
-        <input type="radio" name="choosedAvatar" value=3><img src="../user-registry/user-avatars/mulher.png" name="3">
-    </p>
-    <p>
-        <input type="radio" name="choosedAvatar" value=4><img src="../user-registry/user-avatars/jogador.png" name="4">
-    </p>
-    <p>
         <button onclick="usuarioVendeuAlma()">Enviar</button>
     </p>
 </form>

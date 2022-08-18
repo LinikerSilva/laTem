@@ -41,7 +41,6 @@ function insertNewEnterprise($enterprisePassword) {
     if ($return > 0) {
         header("Location: successfulEnterprisePage.php");
     } else {
-        echo $sql;
         echo "Houve um erro na inserção no banco!";
     }
 

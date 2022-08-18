@@ -64,7 +64,7 @@ if (isset($_GET['erro'])) {
     <div class="alert alert-danger d-flex align-items-center" !important;" role="alert">
     <img src="img/ponto-de-exclamacao.png" width="20" height="20" />
     <div style="margin-left: 1%">
-    Usuário ou senha inválidos
+    Usuário ou senha inválidos.
   </div>
 </div>';
 }
