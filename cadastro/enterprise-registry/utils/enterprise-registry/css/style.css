@@ -1,0 +1,29 @@
+.backColor{
+    background-color: #23108d !important;
+}
+
+.form-cadastro{
+    padding-left: 300px;
+    padding-right: 250px;
+}
+
+.Titulo{
+    text-align: center;
+    color: white;
+}
+
+.botao{
+    text-align: center;
+    padding: 10px;
+    border: 15px;
+    border-radius: 25px;
+    margin-left: 40%;
+
+}
+
+.Alert{
+    text-align: center;
+    color: rgb(201, 83, 83);
+    margin-left: 3%;
+}
+
