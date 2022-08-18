@@ -51,7 +51,7 @@ session_start();
                         
                         <?php
                             echo '
-                                <form action="userRegistry.php">
+                                <form action="../../cadastro/user-registry">
                                 
                                  <input type="submit"  P style="background-color: #23108d !important; color: #fff !important" value="Cadastrar">
     

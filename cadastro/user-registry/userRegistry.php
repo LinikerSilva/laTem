@@ -57,7 +57,7 @@
     <h1>Escolha um Avatar de Usuário</h1>
     </p>
     <p>
-        <input type="radio" name="choosedAvatar" value=1><img src="../user-registry/user-avatars/homem(1).png" name="1">
+        <input type="radio" name="choosedAvatar" value=1><img src="/../laTem/logi" name="1">
     </p>
     <p>
         <input type="radio" name="choosedAvatar" value= 2><img src="../user-registry/user-avatars/homem.png" name="2">

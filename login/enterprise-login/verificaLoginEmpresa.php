@@ -4,7 +4,7 @@
     $enterpriseEmail = $_GET['txtEmail'];
     $enterprisePassword = $_GET['txtSenha'];
 
-    $databaseInstance1 = mysqli_connect('localhost', 'aluno',
+    $databaseInstance1 = mysqli_connect('localhost', 'root',
         '123456', 'la_tem');
     
     $retorno = $databaseInstance1 -> query("select email, senha from empresa where email = '$enterpriseEmail' and senha = '$enterprisePassword'");
@@ -21,6 +21,6 @@
     }
 
 
-    
-      
+
+
 ?>
