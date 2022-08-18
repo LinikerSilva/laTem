@@ -51,9 +51,9 @@ session_start();
                         
                         <?php
                             echo '
-                                <form action="../../cadastro/user-registry">
+                                <form action="userRegistry.php">
                                 
-                                 <input type="submit"  P style="background-color: #23108d !important; color: #fff !important" value="Cadastrar">
+                                 <input type="submit"  class="button botao is-block is-large is-fullwidth" style="background-color: #23108d !important; color: #fff !important" value="Cadastrar">
     
                                 <hr>
                                 </form>
