@@ -2,10 +2,6 @@ create database la_tem;
 
 use la_tem;
 
-create table avatar(
-id_avatar int primary key auto_increment,
-avatar blob);
-
 create table usuario(
 id_usuario int primary key auto_increment,
 nome varchar(60) not null,
@@ -15,7 +11,6 @@ cpf char(11) not null,
 constraint unique_cpf_usuario unique (cpf),
 email varchar(60) not null,
 constraint unique_email_usuario unique (email),
-avatar_fk int not null,
 constraint foreign_key_avatar_usuario foreign key (avatar_fk) references avatar (id_avatar),
 rua varchar(60) not null,
 bairro varchar(40) not null,
@@ -51,13 +46,13 @@ codigo_de_pais char(2) not null
 
 create table imagem_produto(
 id_imagem_produto int primary key auto_increment,
-imagem blob);
+imagem_nome varchar(40) not null);
 
 create table produto(
 id_produto int primary key auto_increment,
 nome varchar(60) not null,
 categoria varchar(45) not null,
-imagem_fk int not null,
+imagem_nome_fk int not null,
 constraint foreign_key_imagem_produto foreign key (imagem_fk) references imagem_produto (id_imagem_produto),
 empresa_fk int not null,
 constraint foreign_key_empresa_produto foreign key (empresa_fk) references empresa (id_empresa)
