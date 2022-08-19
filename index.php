@@ -22,20 +22,10 @@ session_start();
 
 <body>
     <section class="hero is-success is-fullheight">
-    <div class="collapse" id="navbarToggleExternalContent">
-  <div class="p-4">
-    <a>
-        <h5 class="text-white h4">Login Empresarial</h5>
-    </a>
-    
-  </div>
-</div>
-<nav class="navbar ">
+    <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <button class="navbar-toggler" style="background-color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon" style="background-color: white;"></span>
-    </button>
-  </div>
+    <a class="navbar-brand" href="login/enterprise-login/loginEmpresa.php">Login Empresarial
+    </a>
 </nav>
         <div class="hero-body">
             <div class="container has-text-centered" style="margin-bottom: 10vh;">
