@@ -130,7 +130,7 @@ echo '
         </div>
         </div>
 
-        <br><br>
+        <br>
 
         <div class="field user-box">
         <div class="control ">
@@ -140,6 +140,8 @@ echo '
             </label>
         </div>
         </div>
+
+        <br>
 
             <input type="submit" class="button botao is-block is-large is-fullwidth" value="Enviar">
     </form>';

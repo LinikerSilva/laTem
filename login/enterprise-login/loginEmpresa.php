@@ -13,6 +13,7 @@ session_start();
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bulma.min.css" />
     <link rel="stylesheet" href="css/css.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -22,10 +23,15 @@ session_start();
 
 <body>
     <section class="hero is-success is-fullheight">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/site/laTem/">Voltar</a>
+            </div>
+        </nav>
         <div class="hero-body">
             <div class="container has-text-centered" style="margin-bottom: 10vh;">
                 <div class="column is-4 is-offset-4">
-                    <img src="img/logo.png" height="250" width="250">
+                    <img src="/site/laTem/img/logo.png" height="250" width="250">
                     <br><br><br><br>
                     <div class="login-box">
                         <?php
@@ -52,7 +58,7 @@ session_start();
                             echo '
                                 <form action="userRegistry.php">
                                 
-                                 <input type="submit"  P style="background-color: #23108d !important; color: #fff !important" value="Cadastrar">
+                                 <input type="submit"  class="button botao is-block is-large is-fullwidth" style="background-color: #23108d !important; color: #fff !important" value="Cadastrar">
     
                                 <hr>
                                 </form>

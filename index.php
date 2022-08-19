@@ -22,11 +22,11 @@ session_start();
 
 <body>
     <section class="hero is-success is-fullheight">
-    <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="login/enterprise-login/loginEmpresa.php">Login Empresarial
-    </a>
-</nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="login/enterprise-login/loginEmpresa.php">Login Empresarial</a>
+            </div>
+        </nav>
         <div class="hero-body">
             <div class="container has-text-centered" style="margin-bottom: 10vh;">
                 <div class="column is-4 is-offset-4">
