@@ -34,6 +34,10 @@ session_start();
                     <img src="../../img/logo.png" height="250" width="250">
                     <br><br><br><br>
                     <div class="login-box">
+                        <div class="text-center" style="color: white;">
+                            <h1>Login de Empresa</h1>
+                        </div>
+                        <br><br>
                         <?php
                             echo '
                                 <form action="verificaLoginEmpresa.php">

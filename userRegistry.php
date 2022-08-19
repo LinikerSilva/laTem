@@ -21,7 +21,12 @@ session_start();
 </head>
 
 <body>
-    <section class="is-fullheight">
+<section class="hero is-success is-fullheight">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.php">Voltar</a>
+            </div>
+        </nav>
         <div class="hero-body">
             <div class="container has-text-centered" style="margin-bottom: 10vh;">
                 <div class="column is-4 is-offset-4">
@@ -35,27 +40,28 @@ session_start();
 <?php
 echo '
     <form action="userPasswordVerifier.php">
-    <div class="field user-box">
-        <div class="control">
-            <input type="text" name="txtName" placeholder="Nome" class="input is-large">
-    </div>
-    </div>
         <div class="field user-box">
-        <div class="control">
-            <input type="text" name="txtSocialName" placeholder="Nome Social" class="input is-large">
-        </div>
+            <div class="control">
+                <input type="text" name="txtName" placeholder="Nome" class="input is-large">
+            </div>
         </div>
 
         <div class="field user-box">
-        <div class="control">
-            <input type="text" name="txtCpf" placeholder="CPF" class="input is-large">
-        </div>
+            <div class="control">
+                <input type="text" name="txtSocialName" placeholder="Nome Social" class="input is-large">
+            </div>
         </div>
 
         <div class="field user-box">
-        <div class="control">
-            <input type="email" name="txtEmail" placeholder="Email" class="input is-large">
+            <div class="control">
+                <input type="text" name="txtCpf" placeholder="CPF" class="input is-large">
+            </div>
         </div>
+
+        <div class="field user-box">
+            <div class="control">
+                <input type="email" name="txtEmail" placeholder="Email" class="input is-large">
+            </div>
         </div>
 
         <div class="field user-box">
