@@ -25,13 +25,13 @@ session_start();
     <section class="hero is-success is-fullheight">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/site/laTem/">Voltar</a>
+                <a class="navbar-brand" href="../../index.php">Voltar</a>
             </div>
         </nav>
         <div class="hero-body">
             <div class="container has-text-centered" style="margin-bottom: 10vh;">
                 <div class="column is-4 is-offset-4">
-                    <img src="/site/laTem/img/logo.png" height="250" width="250">
+                    <img src="../../img/logo.png" height="250" width="250">
                     <br><br><br><br>
                     <div class="login-box">
                         <?php
