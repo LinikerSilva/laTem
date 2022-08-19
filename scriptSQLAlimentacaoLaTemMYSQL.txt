@@ -1,0 +1,39 @@
+insert into usuario (nome, senha, cpf, email, avatar_fk, rua,
+ bairro, numero, cep, cidade, uf, pais, telefone, ddd, codigo_de_pais) 
+ values ('Pedro Gonçalves Moreira','Pedro123',45766534890,'pedro.moreira@gmail.com', 1, 'Rua Ademar de Barros','centro', 1436,14406452, 'Franca', 'SP','Brasil', 99999-9999, 16, 55);
+insert into usuario (nome, senha, cpf, email, avatar_fk, rua,
+ bairro, numero, cep, cidade, uf, pais, telefone, ddd, codigo_de_pais) 
+ values ('Michele Guerreira Xavier','Mic123',45764894897,'michele.xavier@gmail.com', 2, 'Rua  José Chiachile','Alvorada', 3567,14406342, 'São Paulo', 'SP','Brasil', 98889-9779, 21, 55);
+insert into usuario (nome, senha, cpf, email, avatar_fk, rua,
+ bairro, numero, cep, cidade, uf, pais, telefone, ddd, codigo_de_pais) 
+ values ('Matheus Paulino Borges','Mat123',45766334850,'matheus.borges@gmail.com', 3, 'Rua Ana Aymola Chicaroni','centro', 1234,14406782, 'Franca', 'SP','Brasil', 97799-9859, 16, 55);
+ insert into usuario (nome, senha, cpf, email, avatar_fk, rua,
+ bairro, numero, cep, cidade, uf, pais, telefone, ddd, codigo_de_pais) 
+ values ('Maria Helena Silva','Mah123',45786432895,'maria.helena@gmail.com', 4, 'Rua Santa Terezinha','Martins', 4567,14406876, 'Franca', 'SP','Brasil', 98799-9349, 16, 55);
+
+insert into empresa (razao_social, senha, email, ramo_atuacao, cnpj, rua, bairro, numero, cep, cidade, uf, pais, telefone, ddd, codigo_de_pais) values ('MiniBox', '44662288', 'minibox@gmail.com', 'Mercado', '55489671235689', 'Rua da Amizade','Jardim Noemia', '700', '14406888', 'Franca','SP','Brasil', 88615548, '16', '55');
+insert into empresa (razao_social, senha, email, ramo_atuacao, cnpj, rua, bairro, numero, cep, cidade, uf, pais, telefone, ddd, codigo_de_pais) values ('DogCat', '44662278', 'dogcat@gmail.com', 'Petshop', '55488671235689', 'Rua da Felicidade','Jardim Veneze', '650', '14406448', 'Franca','SP','Brasil', 99615248, '16', '55');
+insert into empresa (razao_social, senha, email, ramo_atuacao, cnpj, rua, bairro, numero, cep, cidade, uf, pais, telefone, ddd, codigo_de_pais) values ('Tool', '44662255', 'tool@gmail.com', 'Mecanico', '55488675557689', 'Rua da Maria Flor','Paineiras', '4473', '1445544', 'Franca','SP','Brasil', 99615000, '16', '55');
+insert into empresa (razao_social, senha, email, ramo_atuacao, cnpj, rua, bairro, numero, cep, cidade, uf, pais, telefone, ddd, codigo_de_pais) values ('Drug', '14662178', 'drug@gmail.com', 'Farmacia', '55488601235689', 'Rua Dom Pedro Segundo','Bonsuceso', '650', '14406008', 'Franca','SP','Brasil', 99615111, '16', '55');
+insert into empresa (razao_social, senha, email, ramo_atuacao, cnpj, rua, bairro, numero, cep, cidade, uf, pais, telefone, ddd, codigo_de_pais) values ('Candy', '40062228', 'candy@gmail.com', 'Padaria', '55488671249223', 'Rua Ribeiro','Villa Formosa', '441', '14406118', 'Franca','SP','Brasil', 98815248, '16', '55');
+insert into empresa (razao_social, senha, email, ramo_atuacao, cnpj, rua, bairro, numero, cep, cidade, uf, pais, telefone, ddd, codigo_de_pais) values ('CarGas', '40660247', 'cargas@gmail.com', 'Posto de Combustivel', '55485661231280', 'Rua Pereira Luiza','São Domingos', '222', '14406008', 'Franca','SP','Brasil', 96587234, '16', '55');
+
+insert into produto(nome, categoria, imagem_fk, empresa_fk) values('Macarrão', 'Mercado',1, 1);
+insert into produto(nome, categoria, imagem_fk, empresa_fk)values( 'Extrato de Tomate', 'Mercado', 2, 1);
+insert into produto(nome, categoria, imangem_fk, empresa_fK) values('Sal','Mercado', 3, '1');
+insert into produto(nome, categoria, imagem_fk, empresa_fk) values( 'Ração', 'Petshop', 4, 2);
+insert into produto(nome, categoria, imagem_fk, empresa_fk) values('Petisco', 'Petshop', 2, 2);
+insert into produto(nome, categoria, imagem_fk, empresa_fk) values('Brinquedo', 'Petshop', 3, 2);
+insert into produto(nome, categoria, imagem_fk, empresa_fk) values('pneu', 'mecanico', 1, 3);
+insert into produto(nome, categoria, imagem_fk, empresa_fk) values('oleo', 'mecanico', 2, 3);
+insert into produto(nome, categoria, imagem_fk, empresa_fk) values('capacete', 'mecanico', 3,3);
+insert into produto(nome, categoria, imagem_fk, empresa_fk) values('dipirona', 'farmacia', 1, 4);
+insert into produto(nome, categoria, imagem_fk, empresa_fk) values('gaze', 'farmacia', 2, 4);
+insert into produto(nome, categoria, imagem_fk, empresa_fk) values('água oxigenada', 'farmacia', 3, 4);
+insert into produto(nome, categoria, imagem_fk, empresa_fk) values('pão caseiro', 'padaria', 1, 5);
+insert into produto(nome, categoria, imagem_fk, empresa_fk) values('suco natural', 'padaria', 2, 5);
+insert into produto(nome, categoria, imagem_fk, empresa_fk) values('leite', 'padaria', 3,'Candy');
+insert into produto(nome, categoria, imagem_fk, empresa_fk) values('gasolina', 'posto de combustivel', 1,6);
+insert into produto(nome, categoria, imagem_fk, empresa_fk) values('oleo de motor', 'posto de combustivel', 2, 6);
+insert into produto(nome, categoria, imagem_fk, empresa_fk) values('disel', 'posto de combustivel', 3, 6);
+
