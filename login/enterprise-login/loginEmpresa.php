@@ -25,7 +25,7 @@ session_start();
     <section class="hero is-success is-fullheight">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/site/laTem/">Voltar</a>
+                <a class="navbar-brand" href="../../index.php">Voltar</a>
             </div>
         </nav>
         <div class="hero-body">
