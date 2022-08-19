@@ -31,7 +31,7 @@ session_start();
         <div class="hero-body">
             <div class="container has-text-centered" style="margin-bottom: 10vh;">
                 <div class="column is-4 is-offset-4">
-                    <img src="/site/laTem/img/logo.png" height="250" width="250">
+                    <img src="../../img/logo.png" height="250" width="250">
                     <br><br><br><br>
                     <div class="login-box">
                         <?php
