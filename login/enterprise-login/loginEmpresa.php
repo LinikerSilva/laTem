@@ -9,7 +9,8 @@ session_start();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login - Lá Tem</title>
+    <title>Login Empresarial - Lá Tem</title>
+    <link rel="icon" type="image/x-icon" href="../../img/la-tem-favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bulma.min.css" />
     <link rel="stylesheet" href="css/css.css" />
@@ -43,7 +44,7 @@ session_start();
                                 <form action="verificaLoginEmpresa.php">
                                 <div class="field user-box">
                                     <div class="control">
-                                        <input placeholder="  Email" name="txtEmail" name="text" class="input is-large" autofocus="">
+                                        <input placeholder="  Razão Social" name="txtEmail" name="text" class="input is-large" autofocus="">
                                     </div>
                                 </div>
     
