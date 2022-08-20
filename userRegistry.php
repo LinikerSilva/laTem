@@ -4,7 +4,7 @@ session_start();
 
 <!DOCTYPE html>
 <html>
-    
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,10 +22,31 @@ session_start();
 </head>
 
 <body>
-<section class="hero is-success is-fullheight">
+    <script src="cadastro/enterprise-registry/utils/verificadorDeVendaDeAlmaDeEmpresa.js" rel="script"></script>
+    <section class="hero is-success is-fullheight">
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.php">Voltar</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.php">
+                            <img src="img/hand.png" alt="" width="60" height="48">
+                            <img src="img/name 1.png" alt="" width="60" height="48">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.php">Login Usuário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="login/enterprise-login/loginEmpresa.php">Login Empresarial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="userRegistry.php">Cadastrode Usuário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cadastro/enterprise-registry/enterpriseRegistry.php">Cadastro Empresarial
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
         <div class="hero-body">
@@ -34,12 +55,12 @@ session_start();
                     <img src="img/usuario.png" height="250" width="250">
                     <br><br><br><br>
                     <div class="login-box">
-    <div class="text-center" style="color: white;">
-    <h1>Cadastro de Usuário</h1>
-    </div>
-    <br><br>
-<?php
-echo '
+                        <div class="text-center" style="color: white;">
+                            <h1>Cadastro de Usuário</h1>
+                        </div>
+                        <br><br>
+                        <?php
+                        echo '
     <form action="userPasswordVerifier.php">
         <div class="field user-box">
             <div class="control">
@@ -153,16 +174,17 @@ echo '
             <input type="submit" class="button botao is-block is-large is-fullwidth" value="Enviar">
     </form>';
 
-if (isset($_GET['erro'])) {
-    echo '<h3>As senhas são diferentes.</h3>';
-}
-?>
+                        if (isset($_GET['erro'])) {
+                            echo '<h3>As senhas são diferentes.</h3>';
+                        }
+                        ?>
 
-</div>
-</div>
-</div>
-</div>
-</section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
+
 </html>
