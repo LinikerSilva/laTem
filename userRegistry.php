@@ -36,7 +36,7 @@ session_start();
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 " style="margin-left: 50%;">
+                    <ul class="navbar-nav mb-2 " style="margin-left: 60%;">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.php">Login Usuário</a>
                         </li>
@@ -52,7 +52,9 @@ session_start();
                     </ul>
                 </div>
             </div>
-        </nav> 
+        </nav>
+
+
     <div class="hero-body">
         <div class="container has-text-centered" style="margin-bottom: 10vh;">
             <div class="column is-4 is-offset-4">

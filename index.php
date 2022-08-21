@@ -23,7 +23,7 @@ session_start();
 
 <body>
     <section class="hero is-success is-fullheight">
-        <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="nav-link active" href="index.php">
                     <img src="img/hand.png" alt="" width="60" height="48">
@@ -33,12 +33,12 @@ session_start();
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 " style="margin-left: 50%;">
+                    <ul class="navbar-nav mb-2 " style="margin-left: 60%;">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.php">Login Usuário</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="login/enterprise-login/loginEmpresa.php">Login Empresarial</a>
+                            <a class="nav-link active" href="../../loginEmpresa.php">Login Empresarial</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="userRegistry.php">Cadastro de Usuário</a>
@@ -49,7 +49,7 @@ session_start();
                     </ul>
                 </div>
             </div>
-        </nav> 
+        </nav>
         <div class="hero-body">
             <div class="container has-text-centered" style="margin-bottom: 10vh;">
                 <div class="column is-4 is-offset-4">
