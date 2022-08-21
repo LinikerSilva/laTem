@@ -44,16 +44,11 @@ ddd varchar(4) not null,
 codigo_de_pais varchar(3) not null
 );
 
-create table imagem_produto(
-id_imagem_produto int primary key auto_increment,
-imagem_nome varchar(40) not null);
-
 create table produto(
 id_produto int primary key auto_increment,
 nome varchar(60) not null,
-categoria varchar(45) not null,
-imagem_nome_fk int not null,
-constraint foreign_key_imagem_produto foreign key (imagem_nome_fk) references imagem_produto (id_imagem_produto),
+categoria varchar(100) not null,
+imagem_path varchar(100) not null,
 empresa_fk int not null,
 constraint foreign_key_empresa_produto foreign key (empresa_fk) references empresa (id_empresa)
 );

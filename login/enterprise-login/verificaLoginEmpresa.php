@@ -7,13 +7,14 @@
     $databaseInstance1 = mysqli_connect('localhost', 'root',
         '', 'la_tem');
     
-    $retorno = $databaseInstance1 -> query("select nome, cnpj, senha from empresa where cnpj = '$enterpriseCnpj' and senha = '$enterprisePassword'");
+    $retorno = $databaseInstance1 -> query("select id_empresa, nome, cnpj, senha from empresa where cnpj = '$enterpriseCnpj' and senha = '$enterprisePassword'");
 
     if ( mysqli_num_rows($retorno) > 0 ){
         while ($registro = $retorno -> fetch_assoc()) {
             $_SESSION['token'] = 'validToken';
             $_SESSION['nome'] = $registro['nome'];
-            header("Location: empresaLogada.php");
+            $_SESSION['id_empresa'] = $registro['id_empresa'];
+            header("Location: ../upload/empresaLogada.php");
           }
     } else {
         //Coloque aqui para fazer o que for necessário;
