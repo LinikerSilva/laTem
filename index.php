@@ -4,7 +4,7 @@ session_start();
 
 <!DOCTYPE html>
 <html>
-    
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +23,7 @@ session_start();
 
 <body>
     <section class="hero is-success is-fullheight">
-    <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="nav-link active" href="index.php">
                     <img src="img/hand.png" alt="" width="60" height="48">
@@ -32,22 +32,22 @@ session_start();
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 " style="margin-left: 60%;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.php">Login Usuário</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="../../loginEmpresa.php">Login Empresarial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="userRegistry.php">Cadastro de Usuário</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="cadastro/enterprise-registry/enterpriseRegistry.php">Cadastro Empresarial</a>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.php">Login Usuário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../../loginEmpresa.php">Login Empresarial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="userRegistry.php">Criar conta de Usuário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cadastro/enterprise-registry/enterpriseRegistry.php">Criar conta Empresarial</a>
+                    </li>
+                </ul>
             </div>
         </nav>
         <div class="hero-body">
@@ -61,7 +61,7 @@ session_start();
                         </div>
                         <br><br>
                         <?php
-                            echo '
+                        echo '
                                 <form action="verificaLogin.php">
                                 <div class="field user-box">
                                     <div class="control">
@@ -79,28 +79,28 @@ session_start();
 
                                  <br>
                                 </form>
-                            ';?>
-                        
+                            '; ?>
+
                         <?php
-                            echo '
+                        echo '
                                 <form action="userRegistry.php">
                                 
                                  <input type="submit"  class="button botao is-block is-large is-fullwidth" style="background-color: #23108d !important; color: #fff !important" value="Cadastrar">
     
                                 <hr>
                                 </form>
-                            ';?>
-<?php
-if (isset($_GET['erro'])) {
-    echo '
+                            '; ?>
+                        <?php
+                        if (isset($_GET['erro'])) {
+                            echo '
     <div class="alert alert-danger d-flex align-items-center" !important;" role="alert">
     <img src="img/ponto-de-exclamacao.png" width="20" height="20" />
     <div style="margin-left: 1%">
     Usuário ou senha inválidos.
   </div>
 </div>';
-}
-?>
+                        }
+                        ?>
 
                     </div>
                 </div>
@@ -109,4 +109,5 @@ if (isset($_GET['erro'])) {
     </section>
 
 </body>
+
 </html>

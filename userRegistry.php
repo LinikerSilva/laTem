@@ -24,8 +24,8 @@ session_start();
 </head>
 
 <body>
-<script src="verificadorDeVendaDeAlmaDeUsuario.js" rel="script"></script>
-<section class="hero is-success is-fullheight">
+    <script src="verificadorDeVendaDeAlmaDeUsuario.js" rel="script"></script>
+    <section class="hero is-success is-fullheight">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="nav-link active" href="index.php">
@@ -35,158 +35,172 @@ session_start();
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 " style="margin-left: 60%;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.php">Login Usuário</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="../../loginEmpresa.php">Login Empresarial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="userRegistry.php">Cadastro de Usuário</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="cadastro/enterprise-registry/enterpriseRegistry.php">Cadastro Empresarial</a>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 " style="float: right !important;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Login
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.php">Login Usuário</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../../loginEmpresa.php">Login Empresarial</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Criar Conta
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="userRegistry.php">Cadastro de Usuário</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="cadastro/enterprise-registry/enterpriseRegistry.php">Cadastro Empresarial</a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </nav>
 
 
-    <div class="hero-body">
-        <div class="container has-text-centered" style="margin-bottom: 10vh;">
-            <div class="column is-4 is-offset-4">
-                <img src="img/usuario.png" height="250" width="250">
-                <br><br><br><br>
-                <div class="login-box">
-                    <div class="text-center" style="color: white;">
-                        <h1>Cadastro de Usuário</h1>
+        <div class="hero-body">
+            <div class="container has-text-centered" style="margin-bottom: 10vh;">
+                <div class="column is-4 is-offset-4">
+                    <img src="img/usuario.png" height="250" width="250">
+                    <br><br><br><br>
+                    <div class="login-box">
+                        <div class="text-center" style="color: white;">
+                            <h1>Cadastro de Usuário</h1>
+                        </div>
+                        <br><br>
+                        <form action="registeringNewUserPasswordVerifier.php" method="post" name="userFormulary">
+                            <div class="field user-box">
+                                <div class="control">
+                                    <input type="text" name="txtName" placeholder="Nome" class="input is-large">
+                                </div>
+                            </div>
+
+                            <div class="field user-box">
+                                <div class="control">
+                                    <input type="text" name="txtSocialName" placeholder="Nome Social" class="input is-large">
+                                </div>
+                            </div>
+
+                            <div class="field user-box">
+                                <div class="control">
+                                    <input type="text" name="txtCpf" placeholder="CPF" class="input is-large" onkeypress="$(this).mask('000.000.000-00');">
+                                </div>
+                            </div>
+
+                            <div class="field user-box">
+                                <div class="control">
+                                    <input type="email" name="txtEmail" placeholder="Email" class="input is-large">
+                                </div>
+                            </div>
+
+                            <div class="field user-box">
+                                <div class="control">
+                                    <input type="text" name="txtCep" placeholder="CEP" maxlength="" class="input is-large" onkeypress="$(this).mask('00000-000')">
+                                </div>
+                            </div>
+
+                            <div class="field user-box">
+                                <div class="control">
+                                    <input type="text" name="txtRua" placeholder="Rua" class="input is-large">
+                                </div>
+                            </div>
+
+                            <div class="field user-box">
+                                <div class="control">
+                                    <input type="text" name="txtBairro" placeholder="Bairro" class="input is-large">
+                                </div>
+                            </div>
+
+                            <div class="field user-box">
+                                <div class="control">
+                                    <input type="text" name="txtNumber" placeholder="Número" class="input is-large" maxlength="4" onkeypress="$(this).mask('#')">
+                                </div>
+                            </div>
+
+                            <div class="field user-box">
+                                <div class="control">
+                                    <input type="text" name="txtCity" placeholder="Cidade" class="input is-large">
+                                </div>
+                            </div>
+
+                            <div class="field user-box">
+                                <div class="control">
+                                    <input type="text" name="txtUf" placeholder="UF" class="input is-large" onkeypress="$(this).mask('SS')">
+                                </div>
+                            </div>
+
+                            <div class="field user-box">
+                                <div class="control">
+                                    <input type="text" name="txtCountry" placeholder="País" class="input is-large">
+                                </div>
+                            </div>
+
+                            <div class="field user-box">
+                                <div class="control">
+                                    <input type="tel" name="txtPhone" placeholder="Telefone" class="input is-large" maxlength="9" onkeypress="$(this).mask('00000-0009')">
+                                </div>
+                            </div>
+
+                            <div class="field user-box">
+                                <div class="control">
+                                    <input type="text" name="txtDdd" placeholder="DDD" class="input is-large" onkeypress="$(this).mask('(00)')">
+                                </div>
+                            </div>
+
+                            <div class="field user-box">
+                                <div class="control">
+                                    <input type="text" name="txtCountryCode" placeholder="Código de País" class="input is-large" onkeypress="$(this).mask('+00')">
+                                </div>
+                            </div>
+
+                            <div class="field user-box">
+                                <div class="control">
+                                    <input type="password" name="txtPassword" placeholder="Senha" class="input is-large">
+                                </div>
+                            </div>
+
+                            <div class="field user-box">
+                                <div class="control">
+                                    <input type="password" name="txtPasswordConfirmation" placeholder="Confirme a Senha" class="input is-large">
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="field user-box">
+                                <div class="control ">
+                                    <label style="color: white;" class="text-center">
+                                        <input type="checkbox" class="text-start" style="float: left !important; margin-top: 4px;" name="vendaDeAlmaDeUsuario">
+                                        Ao criar uma conta, você concorda com os Termos de Uso e Política de Privacidade do Lá Tem.
+                                    </label>
+                                </div>
+                            </div>
+
+                            <br>
+                            <button onclick="usuarioVendeuAlma()" class="button botao is-block is-large is-fullwidth">Enviar</button>
+                        </form>
+                        <?php
+                        if (isset($_GET['erro'])) {
+                            echo '<h3>As senhas são diferentes.</h3>';
+                        }
+                        ?>
+
                     </div>
-                    <br><br>
-    <form action="registeringNewUserPasswordVerifier.php" method="post" name="userFormulary">
-        <div class="field user-box">
-            <div class="control">
-                <input type="text" name="txtName" placeholder="Nome" class="input is-large">
-            </div>
-        </div>
-
-        <div class="field user-box">
-            <div class="control">
-                <input type="text" name="txtSocialName" placeholder="Nome Social" class="input is-large">
-            </div>
-        </div>
-
-        <div class="field user-box">
-            <div class="control">
-                <input type="text" name="txtCpf" placeholder="CPF" class="input is-large" onkeypress="$(this).mask('000.000.000-00');">
-            </div>
-        </div>
-
-        <div class="field user-box">
-            <div class="control">
-                <input type="email" name="txtEmail" placeholder="Email" class="input is-large">
-            </div>
-        </div>
-
-        <div class="field user-box">
-        <div class="control">
-            <input type="text" name="txtCep" placeholder="CEP" maxlength="" class="input is-large" onkeypress="$(this).mask('00000-000')">
-        </div>
-        </div>
-
-        <div class="field user-box">
-        <div class="control">
-            <input type="text" name="txtRua" placeholder="Rua" class="input is-large">
-        </div>
-        </div>
-
-        <div class="field user-box">
-        <div class="control">
-            <input type="text" name="txtBairro" placeholder="Bairro" class="input is-large">
-        </div>
-        </div>
-
-        <div class="field user-box">
-        <div class="control">
-            <input type="text" name="txtNumber" placeholder="Número" class="input is-large" maxlength="4" onkeypress="$(this).mask('#')">
-        </div>
-        </div>
-
-        <div class="field user-box">
-        <div class="control">
-            <input type="text" name="txtCity" placeholder="Cidade" class="input is-large">
-        </div>
-        </div>
-
-        <div class="field user-box">
-        <div class="control">
-            <input type="text" name="txtUf" placeholder="UF" class="input is-large" onkeypress="$(this).mask('SS')">
-        </div>
-        </div>
-
-        <div class="field user-box">
-        <div class="control">
-            <input type="text" name="txtCountry" placeholder="País" class="input is-large">
-        </div>
-        </div>
-
-        <div class="field user-box">
-        <div class="control">
-            <input type="tel" name="txtPhone" placeholder="Telefone" class="input is-large" maxlength="9" onkeypress="$(this).mask('00000-0009')">
-        </div>
-        </div>
-
-        <div class="field user-box">
-        <div class="control">
-            <input type="text" name="txtDdd" placeholder="DDD" class="input is-large" onkeypress="$(this).mask('(00)')">
-        </div>
-        </div>
-
-        <div class="field user-box">
-        <div class="control">
-            <input type="text" name="txtCountryCode" placeholder="Código de País" class="input is-large" onkeypress="$(this).mask('+00')">
-        </div>
-        </div>
-
-        <div class="field user-box">
-        <div class="control">
-            <input type="password" name="txtPassword" placeholder="Senha" class="input is-large">
-        </div>
-        </div>
-
-        <div class="field user-box">
-        <div class="control">
-            <input type="password" name="txtPasswordConfirmation" placeholder="Confirme a Senha" class="input is-large">
-        </div>
-        </div>
-
-        <br>
-
-        <div class="field user-box">
-        <div class="control ">
-            <label  style="color: white;" class="text-center">
-                <input type="checkbox" class="text-start" style="float: left !important; margin-top: 4px;" name="vendaDeAlmaDeUsuario">
-                Ao criar uma conta, você concorda com os Termos de Uso e Política de Privacidade do Lá Tem.
-            </label>
-        </div>
-        </div>
-
-        <br>
-            <button onclick="usuarioVendeuAlma()" class="button botao is-block is-large is-fullwidth">Enviar</button>
-    </form>
-                    <?php
-                    if (isset($_GET['erro'])) {
-                        echo '<h3>As senhas são diferentes.</h3>';
-                    }
-                    ?>
-
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 </body>
 
