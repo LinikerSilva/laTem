@@ -37,31 +37,34 @@ session_start();
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 " style="float: right !important;">
+                <ul class="navbar-nav mb-2 " >
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Login
+                        <a class="nav-link dropdown-toggle bg-success text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Login de:
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="index.php">Login Usuário</a></li>
+                            <li><a class="dropdown-item" href="index.php">Usuário</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="../../loginEmpresa.php">Login Empresarial</a></li>
+                            <li><a class="dropdown-item" href="login/enterprise-login/loginEmpresa.php">Empresarial</a></li>
                         </ul>
                     </li>
+                </ul>
+                <ul></ul>
+                <ul class="navbar-nav mb-2 ">
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Criar Conta
+                    <li class="nav-item dropdown" style="margin-left: -10% !important;">
+                        <a class="nav-link dropdown-toggle bg-white text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Criar Conta:
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="userRegistry.php">Cadastro de Usuário</a></li>
+                            <li><a class="dropdown-item" href="userRegistry.php">Usuário</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="cadastro/enterprise-registry/enterpriseRegistry.php">Cadastro Empresarial</a></li>
-                            
+                            <li><a class="dropdown-item" href="cadastro/enterprise-registry/enterpriseRegistry.php">Empresarial</a></li>
+
                         </ul>
                     </li>
                 </ul>

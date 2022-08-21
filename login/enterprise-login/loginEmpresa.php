@@ -26,7 +26,7 @@ session_start();
 
 <body>
     <section class="hero is-success is-fullheight">
-        <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="nav-link active" href="index.php">
                     <img src="../../img/hand.png" alt="" width="60" height="48">
@@ -35,24 +35,41 @@ session_start();
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 " style="margin-left: 60%;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../../index.php">Login Usuário</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="loginEmpresa.php">Login Empresarial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="../../userRegistry.php">Cadastro de Usuário</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="../../cadastro/enterprise-registry/enterpriseRegistry.php">Cadastro Empresarial</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </nav> 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 " >
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle bg-success text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Login de:
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../../index.php">Usuário</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="loginEmpresa.php">Empresarial</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul></ul>
+                <ul class="navbar-nav mb-2 ">
+
+                    <li class="nav-item dropdown" style="margin-left: -10% !important;">
+                        <a class="nav-link dropdown-toggle bg-white text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Criar Conta:
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../../userRegistry.php">Usuário</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="../../cadastro/enterprise-registry/enterpriseRegistry.php">Empresarial</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <div class="hero-body">
             <div class="container has-text-centered" style="margin-bottom: 10vh;">
                 <div class="column is-4 is-offset-4">
