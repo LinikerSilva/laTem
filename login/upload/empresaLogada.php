@@ -19,7 +19,6 @@ $name = $_SESSION['nome'];
     <title>Lá Tem - Home Empresarial</title>
     <link rel="icon" type="image/x-icon" href="img/la-tem-favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/alreadyLogged.css" />
 </head>
 <body>
 <form method="post" enctype="multipart/form-data" action="productInsert.php">
