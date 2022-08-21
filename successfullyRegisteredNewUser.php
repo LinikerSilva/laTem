@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bulma.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="cadastro/user-registry/utils/css/style.css" />
 
     <link rel="stylesheet" type="/css" href="css/login.css">
 

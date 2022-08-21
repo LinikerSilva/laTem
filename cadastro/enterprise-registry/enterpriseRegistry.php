@@ -18,7 +18,8 @@ session_start();
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="../../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.mask.js"></script>
 </head>
 
 <body>
@@ -41,10 +42,14 @@ session_start();
                         </div>
 
     <br><br>
-    <?php
-    echo '
-    <form action="utils/enterprisePasswordVerifier.php" method="post" name="enterpriseFormulary">
-        
+    <form action="utils/registeringNewEnterprisePasswordVerifier.php" method="post" name="enterpriseFormulary">
+
+        <div class="field user-box">
+            <div class="control">
+                <input type="text" name="txtEnterpriseName" placeholder="Nome" class="input is-large">
+            </div>
+        </div>
+
         <div class="field user-box">
             <div class="control">
             <input type="text" name="txtRazaoSocial" placeholder="Razão Social" class="input is-large">
@@ -65,13 +70,13 @@ session_start();
         
         <div class="field user-box">
             <div class="control">
-            <input type="text" name="txtCnpj" placeholder="CNPJ" class="input is-large">
+            <input type="text" name="txtCnpj" placeholder="CNPJ" class="input is-large" onkeypress="$(this).mask('00.000.000/0000-00')">
         </div>
         </div>
         
         <div class="field user-box">
             <div class="control">
-            <input type="text" name="txtEnterpriseCep" placeholder="CEP" class="input is-large">
+            <input type="text" name="txtEnterpriseCep" placeholder="CEP" class="input is-large" onkeypress="$(this).mask('00000-000')">
         </div>
         </div>
         
@@ -89,7 +94,7 @@ session_start();
         
         <div class="field user-box">
             <div class="control">
-            <input type="text" name="txtEnterpriseNumber" placeholder="Número" class="input is-large">
+            <input type="text" name="txtEnterpriseNumber" placeholder="Número" class="input is-large" maxlength="4" onkeypress="$(this).mask('#')">
         </div>
         </div>
         
@@ -101,7 +106,7 @@ session_start();
         
         <div class="field user-box">
             <div class="control">
-            <input type="text" name="txtEnterpriseUf" placeholder="UF" class="input is-large">
+            <input type="text" name="txtEnterpriseUf" placeholder="UF" class="input is-large" onkeypress="$(this).mask('SS')">
         </div>
         </div>
         
@@ -113,19 +118,19 @@ session_start();
         
         <div class="field user-box">
             <div class="control">
-            <input type="tel" name="txtEnterprisePhone" placeholder="Telefone" class="input is-large">
+            <input type="tel" name="txtEnterprisePhone" placeholder="Telefone" class="input is-large" maxlength="9" onkeypress="$(this).mask('00000-0009')">
         </div>
         </div>
         
         <div class="field user-box">
             <div class="control">
-            <input type="text" name="txtEnterpriseDdd" placeholder="DDD" class="input is-large">
+            <input type="text" name="txtEnterpriseDdd" placeholder="DDD" class="input is-large" onkeypress="$(this).mask('(00)')">
         </div>
         </div>
         
         <div class="field user-box">
             <div class="control">
-            <input type="text" name="txtEnterpriseCountryCode" placeholder="Código de País" class="input is-large">
+            <input type="text" name="txtEnterpriseCountryCode" placeholder="Código de País" class="input is-large" onkeypress="$(this).mask('+00')">
         </div>
         </div>
         
@@ -156,8 +161,7 @@ session_start();
         
         <button onclick="empresaVendeuAlma()" class="button botao is-block is-large is-fullwidth">Enviar</button>
 
-    </form>';
-    ?>
+    </form>
 
 <?php
 if (isset($_POST['erro'])) {

@@ -9,6 +9,8 @@ if ($enterprisePassword != $enterprisePasswordConfirmation) {
 }
 
 function insertNewEnterprise($enterprisePassword) {
+    //não está pegando o txtEnterpriseName
+    $enterpriseName = $_POST['txtEnterpriseName'];
     $socialReason = $_POST['txtRazaoSocial'];
     $enterpriseEmail = $_POST['txtEnterpriseEmail'];
     $ramoDeAtuacao = $_POST['txtRamoDeAtuacao'];
@@ -24,13 +26,13 @@ function insertNewEnterprise($enterprisePassword) {
     $enterpriseDdd = $_POST['txtEnterpriseDdd'];
     $enterpriseCountryCode = $_POST['txtEnterpriseCountryCode'];
 
-    $connection = new mysqli('localhost', 'admin',
-        '@Luno123', 'la_tem');
+    $connection = new mysqli('localhost', 'root',
+        '', 'la_tem');
 
-    $sql = "insert into empresa (razao_social, senha, email, ramo_atuacao,
+    $sql = "insert into empresa (nome, razao_social, senha, email, ramo_atuacao,
                     cnpj, rua, bairro, numero, cep, cidade, uf, pais, telefone,
                     ddd, codigo_de_pais)
-            values ('$socialReason', '$enterprisePassword', '$enterpriseEmail',
+            values ('$enterpriseName', '$socialReason', '$enterprisePassword', '$enterpriseEmail',
             '$ramoDeAtuacao', '$cnpj', '$enterpriseRoad',
             '$enterpriseDistrict', '$enterpriseNumber', $enterpriseCep,
             '$enterpriseCity', '$enterpriseUf', '$enterpriseCountry',
@@ -39,7 +41,7 @@ function insertNewEnterprise($enterprisePassword) {
     $return = $connection->query($sql);
 
     if ($return > 0) {
-        header("Location: successfulEnterprisePage.php");
+        header("Location: successfullyRegistredNewEnterprise.php");
     } else {
         echo "Houve um erro na inserção no banco!";
     }

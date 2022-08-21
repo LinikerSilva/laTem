@@ -22,7 +22,7 @@
     <div class="box">    
     <h5 class="textsucess">Sucesso! Seu cadastro foi realizado!</h5><br>
     <a href="enterpriseLogin.php"></a>
-    <form action="index.php">
+    <form action="../../../index.php">
                                 
     <input type="submit"  class="button botao is-block is-large is-fullwidth"  value="Voltar">
     

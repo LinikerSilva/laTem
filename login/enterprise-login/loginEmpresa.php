@@ -19,6 +19,8 @@ session_start();
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.mask.js"></script>
 
 </head>
 
@@ -39,12 +41,10 @@ session_start();
                             <h1>Login de Empresa</h1>
                         </div>
                         <br><br>
-                        <?php
-                            echo '
-                                <form action="verificaLoginEmpresa.php">
+                                <form action="verificaLoginEmpresa.php" method="post">
                                 <div class="field user-box">
                                     <div class="control">
-                                        <input placeholder="  Razão Social" name="txtEmail" name="text" class="input is-large" autofocus="">
+                                        <input placeholder="  CNPJ" name="txtCnpj" name="text" class="input is-large" autofocus="" onkeypress="$(this).mask('00.000.000/0000-00')">
                                     </div>
                                 </div>
     
@@ -57,7 +57,6 @@ session_start();
                                  <input type="submit"  class="button botao is-block is-large is-fullwidth" value="Entrar">
                                  <br>
                                 </form>
-                            ';?>
                         
                         <?php
                             echo '
@@ -72,9 +71,9 @@ session_start();
 if (isset($_GET['erro'])) {
     echo '
     <div class="alert alert-danger d-flex align-items-center" !important;" role="alert">
-    <img src="img/ponto-de-exclamacao.png" width="20" height="20" />
+    <img src="../../img/ponto-de-exclamacao.png" width="20" height="20" />
     <div style="margin-left: 1%">
-    Usuário ou senha inválidos
+    Usuário ou senha inválidos.
   </div>
 </div>';
 }
