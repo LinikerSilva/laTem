@@ -20,7 +20,7 @@ echo '<!doctype html>
                 <th>Endereço</th>
             </tr>';
 $databaseInstance1 = mysqli_connect('localhost', 'root',
-    '', 'la_tem');
+    '123456', 'la_tem');
 
 $retorno = $databaseInstance1 -> query("SELECT P.nome AS nomeproduto, P.categoria, P.imagem_path, E.nome, E.rua, E.bairro, E.numero FROM produto P INNER JOIN empresa E ON P.empresa_fk = E.id_empresa WHERE P.categoria = 'Mercado'");
 

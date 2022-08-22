@@ -31,8 +31,8 @@ echo '<!doctype html>
                     <span class="navbar-toggler-icon"></span>
                 </button>
             <form action="search/userSearch.php" class="search-bar" id="pesquisa">
-            <input type="text" placeholder="Pesquise por um produto..." name="q"><a onclick="sendSearch()" class="search_icon"><i class="fas fa-search"></i></a>
-        </form>
+                <input type="text" placeholder="Pesquise por um produto..." name="q"><a onclick="sendSearch()" class="search_icon"><i class="fas fa-search"></i></a>
+            </form>
         <ul class="navbar-nav mb-2 " >
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle bg-success text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
