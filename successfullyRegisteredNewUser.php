@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/bulma.min.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="cadastro/user-registry/utils/css/style.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
 
     <link rel="stylesheet" type="/css" href="css/login.css">
 
@@ -22,7 +21,7 @@
     <div class="box">    
     <h5 class="textsucess">Sucesso! Seu cadastro foi realizado!</h5><br>
     <a href="enterpriseLogin.php"></a>
-    <form action="index.php">
+    <form action="../../../index.php">
                                 
     <input type="submit"  class="button botao is-block is-large is-fullwidth"  value="Voltar">
     

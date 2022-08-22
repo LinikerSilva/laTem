@@ -1,0 +1,49 @@
+body{
+    background-color: #23108d !important;
+    }
+    
+
+    .container {
+    width: 100vw;
+    height: 100vh;
+    background: #23108d;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+    .box {
+    width: 400px;
+    height: 200px;
+    border: #102f3b;
+    border-radius: 15px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+    body {
+    margin: 0px;
+    }
+    .textsucess{
+        margin-top: 50px;
+    }
+
+    .botao{
+    border: 0;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #23108d;
+    color: white;
+    border: 2px solid #23108d;
+    }
+
+    .botao:hover {
+    background-color: white;
+    color: #23108d;
+    }
