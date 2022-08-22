@@ -17,7 +17,7 @@ $name = $_SESSION['nome'];
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lá Tem - Home Empresarial</title>
-    <link rel="icon" type="image/x-icon" href="img/la-tem-favicon.png">
+    <link rel="icon" type="image/x-icon" href="../../img/la-tem-favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 </head>
 <body>

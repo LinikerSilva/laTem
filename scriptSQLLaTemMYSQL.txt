@@ -1,4 +1,4 @@
-create database la_tem;
+CREATE DATABASE la_tem DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 use la_tem;
 
@@ -21,7 +21,7 @@ pais varchar(60) not null,
 telefone varchar(10) not null,
 ddd varchar(4) not null,
 codigo_de_pais varchar(3) not null
-);
+) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 create table empresa(
 id_empresa int primary key auto_increment,
@@ -42,7 +42,7 @@ pais varchar(60) not null,
 telefone varchar(10) not null,
 ddd varchar(4) not null,
 codigo_de_pais varchar(3) not null
-);
+) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 create table produto(
 id_produto int primary key auto_increment,
@@ -51,4 +51,4 @@ categoria varchar(100) not null,
 imagem_path varchar(100) not null,
 empresa_fk int not null,
 constraint foreign_key_empresa_produto foreign key (empresa_fk) references empresa (id_empresa)
-);
+) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;

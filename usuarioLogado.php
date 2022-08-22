@@ -21,6 +21,7 @@ echo '<!doctype html>
     <link rel="stylesheet" href="loggedUser.css">
 </head>
 <body>
+<script src="search/submitSearch.js" rel="script"></script>
     <div class="div">
             <a class="nav-link active" href="index.php">
                     <img src="img/hand.png" alt="" width="60" height="48">
@@ -29,8 +30,8 @@ echo '<!doctype html>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            <form action="" class="search-bar">
-            <input type="text" placeholder="Pesquise por um produto..." name="q"><a href="" class="search_icon"><i class="fas fa-search"></i></a>
+            <form action="search/userSearch.php" class="search-bar" id="pesquisa">
+            <input type="text" placeholder="Pesquise por um produto..." name="q"><a onclick="sendSearch()" class="search_icon"><i class="fas fa-search"></i></a>
         </form>
         <ul class="navbar-nav mb-2 " >
                     <li class="nav-item dropdown">
@@ -38,7 +39,7 @@ echo '<!doctype html>
                             ' . 'Minha Conta' .
     '</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li style="background-color: #0e6cc4; border-radius: 60px"><a class="dropdown-item" href="index.php">Configurações <img src="img/engrenagem.png" style="height: 20px; width: 20px"></a></li>
+                            <li style="background-color: #0e6cc4; border-radius: 60px"><a class="dropdown-item" href="/config/userConfigurations.php">Configurações <img src="img/engrenagem.png" style="height: 20px; width: 20px"></a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>

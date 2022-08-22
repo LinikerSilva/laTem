@@ -4,9 +4,7 @@ include("conexao.php");
 $name = $_SESSION['nome'];
 $productName = $_POST['txtProductName'];
 $productCategory = $_POST['txtProductCategory'];
-$imagemNovoProduto = $_SESSION['id_imagem_produto_novo'];
 $empresa_fk = $_SESSION['id_empresa'];
-$productInsertQuery = $mysqli->query("insert into produto (nome, categoria, imagem_path, empresa_fk) values ('$productName', '$productCategory', $imagemNovoProduto, $empresa_fk)") or die($mysqli->error);
 
 if (isset($_FILES['arquivo'])) {
     $arquivo = $_FILES['arquivo'];
