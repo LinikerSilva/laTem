@@ -18,6 +18,7 @@ insert into empresa (nome, razao_social, senha, email, ramo_atuacao, cnpj, rua, 
 insert into empresa (nome, razao_social, senha, email, ramo_atuacao, cnpj, rua, bairro, numero, cep, cidade, uf, pais, telefone, ddd, codigo_de_pais) values ('Drug', 'Drug LTDA', '14662178', 'drug@gmail.com', 'Farmácia', '55.488.601/2356-89', 'Rua Dom Pedro Segundo','Bonsuceso', '650', '14406-008', 'Franca','SP','Brasil', 99615111, '(16)', '+55');
 insert into empresa (nome, razao_social, senha, email, ramo_atuacao, cnpj, rua, bairro, numero, cep, cidade, uf, pais, telefone, ddd, codigo_de_pais) values ('Candy', 'Candy LTDA', '40062228', 'candy@gmail.com', 'Padaria', '55.488.671/2492-23', 'Rua Ribeiro','Villa Formosa', '441', '14406-118', 'Franca','SP','Brasil', 98815248, '(16)', '+55');
 insert into empresa (nome, razao_social, senha, email, ramo_atuacao, cnpj, rua, bairro, numero, cep, cidade, uf, pais, telefone, ddd, codigo_de_pais) values ('CarGas', 'CarGas LTDA', '40660247', 'cargas@gmail.com', 'Posto de Combustivel', '55.485.661/2312-80', 'Rua Pereira Luiza','São Domingos', '222', '14406-008', 'Franca','SP','Brasil', 96587234, '(16)', '+55');
+insert into empresa (nome, razao_social, senha, email, ramo_atuacao, cnpj, rua, bairro, numero, cep, cidade, uf, pais, telefone, ddd, codigo_de_pais) values ('Óticas Paris', 'Óticas Paris LTDA', '123456', 'paris@gmail.com', 'Ótica', '99.678.125/9485-26', 'Rua Marcos Freire','Santa Terezinha', '125', '14407-908', 'Franca','SP','Brasil', 95864526, '(16)', '+55');
 
 insert into produto(nome, categoria, imagem_path, empresa_fk) values('Macarrão Santa Luzia', 'Mercado', 'arquivos/63027ef5bc86a.png', 1);
 insert into produto(nome, categoria, imagem_path, empresa_fk)values( 'Extrato de Tomate Elefante', 'Mercado', 'arquivos/5hj47gy398kj5.png', 1);
@@ -37,3 +38,4 @@ insert into produto(nome, categoria, imagem_path, empresa_fk) values('Leite Lide
 insert into produto(nome, categoria, imagem_path, empresa_fk) values('Gasolina', 'Combustível', 'arquivos/mlka37865hg73.jpg', 7);
 insert into produto(nome, categoria, imagem_path, empresa_fk) values('Óleo de Motor GTX', 'Produto Automotivo', 'arquivos/mlka123hjut54.png', 4);
 insert into produto(nome, categoria, imagem_path, empresa_fk) values('Diesel', 'Combustível', 'arquivos/aghn567jh66uj.png', 7);
+insert into produto(nome, categoria, imagem_path, empresa_fk) values('Óculos Ray-Ban', 'Óculos', 'arquivos/aksj45h65j145.png', 8);
