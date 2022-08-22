@@ -191,7 +191,7 @@ session_start();
         <div class="control ">
             <label  style="color: white;" class="text-center">
                 <input type="checkbox" name="vendaDeAlmaDeEmpresa" class="text-start" style="float: left !important; margin-top: 4px;">
-                Ao criar uma conta, você concorda com os Termos de Uso e Política de Privacidade do Lá Tem.
+                Ao criar uma conta, você concorda com os <a href ="termosDeUso.php"> Termos de Uso e Política de Privacidade do Lá Tem.</a>
             </label
         </div>
         </div>
