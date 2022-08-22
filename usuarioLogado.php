@@ -39,7 +39,7 @@ echo '<!doctype html>
                             ' . 'Minha Conta' .
     '</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li style="background-color: #0e6cc4; border-radius: 60px"><a class="dropdown-item" href="/config/userConfigurations.php">Configurações <img src="img/engrenagem.png" style="height: 20px; width: 20px"></a></li>
+                            <li style="background-color: #0e6cc4; border-radius: 60px"><a class="dropdown-item" href="config/userConfigurations.php">Configurações <img src="img/engrenagem.png" style="height: 20px; width: 20px"></a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
