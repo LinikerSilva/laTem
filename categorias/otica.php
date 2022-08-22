@@ -22,7 +22,7 @@ echo '<!doctype html>
 $databaseInstance1 = mysqli_connect('localhost', 'root',
     '', 'la_tem');
 
-$retorno = $databaseInstance1 -> query("SELECT P.nome AS nomeproduto, P.categoria, P.imagem_path, E.nome, E.rua, E.bairro, E.numero FROM produto P INNER JOIN empresa E ON p.empresa_fk = E.id_empresa WHERE P.categoria = 'Oculos'");
+$retorno = $databaseInstance1 -> query("SELECT P.nome AS nomeproduto, P.categoria, P.imagem_path, E.nome, E.rua, E.bairro, E.numero FROM produto P INNER JOIN empresa E ON P.empresa_fk = E.id_empresa WHERE P.categoria = 'Oculos'");
 
 if ( mysqli_num_rows($retorno) > 0 ) {
     while ($registro = $retorno->fetch_assoc()) {

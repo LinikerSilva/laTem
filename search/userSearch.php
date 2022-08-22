@@ -6,7 +6,7 @@ if (!isset($_GET['q'])) {
 } else {
     $produtoBuscado = $mysqli->real_escape_string($_GET['q']);
 
-    $sql_code = "SELECT P.nome AS nomeproduto, P.categoria, P.imagem_path, E.nome, E.rua, E.bairro, E.numero FROM produto P INNER JOIN empresa E ON p.empresa_fk = E.id_empresa WHERE P.nome LIKE '%$produtoBuscado%'";
+    $sql_code = "SELECT P.nome AS nomeproduto, P.categoria, P.imagem_path, E.nome, E.rua, E.bairro, E.numero FROM produto P INNER JOIN empresa E ON P.empresa_fk = E.id_empresa WHERE P.nome LIKE '%$produtoBuscado%'";
     $sql_query = $mysqli->query($sql_code) or die("Erro ao consultar! " . $mysqli->error);
 
     if ($sql_query->num_rows == 0) {
