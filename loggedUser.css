@@ -33,6 +33,7 @@
     align-items: center;
     border-radius: 60px;
     padding: 10px 20px;
+    margin-left: -100% !important;
 }
 
 .search-bar input {
