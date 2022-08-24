@@ -45,7 +45,7 @@ session_start();
             <li class='nav-item dropdown'>
                 <a class='nav-link dropdown-toggle bg-success text-white' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>
                     Minha Conta
-                    </a>
+                </a>
                 <ul class='dropdown-menu' aria-labelledby='navbarDropdown'>
                     <li style='background-color: #0e6cc4; border-radius: 60px'><a class='dropdown-item' href='config/userConfigurations.php'>Configurações <img src='../img/engrenagem.png' style='height: 20px; width: 20px'></a></li>
                     <li>
@@ -67,7 +67,7 @@ session_start();
                         <h1>Meus Dados</h1>
                     </div>
                     <br><br>
-                    <form action='' method='post' name='userFormulary'>
+                    <form action='userProfileUpdate.php' method='post' name='userFormulary'>
                         <?php
                         include('../login/upload/conexao.php');
 
@@ -166,16 +166,12 @@ session_start();
                                         <input type='password' name='txtPassword' value='" . $dados['senha'] . "' class='input is-large'>
                                     </div>
                                 </div>
-        
-                                <div class='field user-box'>
-                                    <div class='control'>
-                                        <input type='password' name='txtPasswordConfirmation' value='" . $dados['nome_social'] . "' class='input is-large'>
-                                    </div>
+                                
                             </div>";
                         }
                         ?>
                         <br>
-                        <button onclick='usuarioVendeuAlma()' class='button botao is-block is-large is-fullwidth'>Atualizar</button>
+                        <button class='button botao is-block is-large is-fullwidth'>Atualizar</button>
                     </form>
                     <?php
                     if (isset($_GET['erro'])) {
